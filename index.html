@@ -1,0 +1,227 @@
+<!-- NOTE: using code, inspiration, and ideas from Conor Bailey on YouTube -->
+<!-- NOTE: using unpkg swiper -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Corrado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/lhp8pvw.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="icon" href="www.tommycorrado.me/favicon.ico">
+
+</head>
+
+<body>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <div id="wrapper">
+        <div class="beginning">
+            <p class="text-wrapper">Tommy</p>
+            <p class="text-wrapper-two">Corrado</p>
+            <p id="about"><a href="#about-me">About</a></p>
+            <p id="films"><a href="#navy-container">Films</a></p>
+            <p id="music"><a href="#spotify-web-one">Music</a></p>
+            <p id="photos"><a href="#gen-everyone">Photos</a></p>
+            <img class="cover-picture" src="WebDevPictures/IMG_4254 (1)-2.jpg" alt="Cover Picture">
+
+        </div>
+
+        <div class="black-container"></div>
+        <div class="orange-container" id="about-me"></div>
+
+        <div class="about-me">
+            <div class="hi">
+                <p>Hi, my name</p>
+                <p>is Tommy</p>
+            </div>
+            <div class="dartmouth">
+                <p id="dartmouth">I go to Dartmouth College, and I</p>
+                <p id="dartmouth">am studying Computer Science,</p>
+                <p id="dartmouth">History, and Film. Below, I</p>
+                <p id="dartmouth">have some of my favorite films,</p>
+                <p id="dartmouth">songs, and most memorable photos.</p>
+            </div>
+            <img class="about-me-picture" src="WebDevPictures/IMG_9118.jpg" alt="tommy">
+        </div>
+
+        
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="WebDevPictures/IMG_3713.JPG" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="WebDevPictures/midsommar.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="WebDevPictures/ladybird.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="WebDevPictures/into-the-wild.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="WebDevPictures/silence-of-the-lambs.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="WebDevPictures/uncut-gems.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="WebDevPictures/goodfellas.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="WebDevPictures/the-martian.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="WebDevPictures/manchester.jpeg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="WebDevPictures/nomadland.jpg" />
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 3,
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2,
+                    slideShadows: false,
+                },
+                loop: true,
+            });
+        </script>
+
+
+        <div class="orange-triangle-container"></div>
+        <div class="navy-container" id="navy-container"></div>
+
+        <div class="blue-black-container"></div>
+        <div class="black-container-two" id="spotify-web-one"></div>
+        <div class="spotify-web-one">
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/19Ym5Sg0YyOCa6ao21bdoG?utm_source=generator" width="100%" height="380"
+                frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div class="spotify-web-two">
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/1HL3yEnYq8LEyFQ3QegA5V?utm_source=generator" width="100%" height="380"
+                frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div class="spotify-web-three">
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/1LzNfuep1bnAUR9skqdHCK?utm_source=generator" width="100%" height="380"
+                frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div class="black-container-three" id="gen-everyone"></div>
+        <div class="gen-everyone">
+            <img src="WebDevPictures/GEN_EVERYONE_OFFICIAL_LOGO_CLEAR.png" alt="geneveryone">
+        </div>
+
+        <div class="genSlider"> 
+            <div class="genSliderInner">
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_0583-2.jpg" alt="fetty wap">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_6357-2.jpg" alt="caterina">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_2612.jpeg" alt="courtney one">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_3754.jpg" alt="bilal">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/firework.jpg" alt="firework">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_2301-2-2.jpeg" alt="mae">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/Art Portfolio 1.jpg" alt="building">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/naturephotofinal.jpg" alt="nature photo">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_3456.jpg" alt="aimee">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_4205.jpg" alt="porch">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/Copy of IMG_3777 (1)-2.jpg" alt="house">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_9267-2.jpg" alt="courtney two">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_7024.jpg" alt="skyler">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_7442.jpg" alt="sharjeel">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_9619.jpg" alt="bedroom">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_5177 (1).jpg" alt="palmtree">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_2068.jpg" alt="hendrix">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_5184.jpg" alt="pray for me">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_5513.jpg" alt="mom">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/New York 3-1-2.jpg" alt="new york">
+                </div>
+                <div class="slideImage">
+                    <img src="WebDevPictures/IMG_3477-2.jpg" alt="chris">
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+
+        <div class="white-container">
+            <div class="learn-more-text">
+                <p>Want to learn more?</p>
+            </div>
+            
+            <div class="twitter">
+                <a href="https://twitter.com/ThomasCorrado_"><img src="WebDevPictures/twitter-logo.png" alt="twitter"></a>
+            </div>
+            
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/thomas-corrado/"><img src="WebDevPictures/LI-In-Bug.png" alt="linkedin"></a>
+            </div>
+            
+            <div class="github">
+                <a href="https://github.com/thomas-corrado"><img src="WebDevPictures/GitHub-Mark.png" alt="git"></a>
+            </div>
+        </div>
+    
+
+</body>
+
+</html>
